@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --pryColor: #00B98E;
+  --pryColor2:#EFFDF5;
+  --secColor: #0E2E50;
+  --lightColor: #fff;
+  --hoverColor: #00cca7;
+}
+
+.another-btn-hover:hover{
+  background-color:  hwb(211 5% 59%) !important;
+}
+a{
+  text-decoration: none !important;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.btn-hover:hover{
+  background-color: var(--hoverColor) !important;
+  color: var(--lightColor) !important;
+}
+.green-text{
+  color: var(--pryColor);
+}
+.w-lg-60 {
+  width: 60%;
+}
+
+@media (max-width: 992px) {
+  .w-lg-60 {
+    width: 100%;
+  }
+}
+.notDarkText{
+  color: var(--secColor);
+}
+.card{
+  border: none;
+}
+
+
+
+/*start heading */
+.navbar-brand > h1:hover{
+  color: var(--hoverColor);
+}
+.logo-container{
+  border: 1px dashed var(--pryColor);
+  width: 3.5rem;
+}
+.navbar-brand > h1{
+ color: var(--pryColor);
+}
+nav .btn, .abt-btn{
+  background-color: var(--pryColor);
+}
+.her0-text a{
+  background-color: var(--pryColor);
+}
+.navbar-nav a:hover{
+  color: var(--hoverColor);
+}
+ .navbar-nav a.active{
+  color: var(--hoverColor) !important;
+}
+.dropdownclass:hover .dropdown-menu{
+  display: block !important;
+}
+
+@media(max-width: 992px){
+  .navbar-btn{
+    width: 120px;
+  }
+}
+
+/* property-types-section */
+.p-type-img{
+  width: 5rem;
+  border: 1px dashed var(--pryColor);
+}
+.p-type .card{
+  background-color: var(--pryColor2);
+  cursor: pointer;
+}
+.p-type .card-body{
+  transition: all 0.5s;
+  border: 1px dashed var(--pryColor);
+  background-color: var(--lightColor);
+  border-radius: 5px;
+}
+.p-type .card:hover .card-body{
+  background-color: var(--pryColor);
+}
+.p-type .card:hover .card-body *{
+  color: var(--lightColor);
+}
+.p-type .card:hover .card-body .p-type-img{
+  background-color: var(--lightColor);
+}
+/* emd of property-types section */
+
+/* about section */
+.about-img img{ 
+   z-index: 2;
+  }
+  .about-img::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: var(--pryColor);
+    transform: skew(20deg);
+    z-index: 1;
+}
+.fa-check{
+  color: var(--pryColor);
+}
+
+
+/* property-listing */
+.property-listing-btn{
+  right: 0;
+  bottom: 0;
+}
+@media (max-width: 992px) {
+  .property-listing-btn {
+    left: 0;
+  }
+}
+.property-listing-btn .btn{
+  border: 1px solid var(--pryColor);
+}
+.card-img-top p{
+  background-color: var(--lightColor);
+  left: 1.5rem;
+}
+.card-img-top p:nth-child(1){
+  top: 1.5rem;
+  background-color: var(--pryColor);
+}
+.item-container{
+  background-color: var(--lightColor);
+}
+.item-container .card-img{
+  overflow: hidden;
+}
+.item-container .card-bottom p{
+  border-top: 1px dotted var(--pryColor);
+  border-right: 1px dotted var(--pryColor);
+  width: 33.3%;
+  margin: 0;
+}
+.item-container .card-bottom p:nth-child(3){
+  border-right:none ;
+}
+.item-container > .card-body:hover .card-img img{
+  transform: scale(1.05) !important;
+}
+.item-container img{
+  cursor: pointer;
+  transition: all 1s;
+}
+.browse-more a{
+  background-color: var(--pryColor);
+}
+
+/* contact-us */
+.contact-us .card{
+  background-color: var(--pryColor2);
+}
+.contact-us .card-body{
+  border: 1px dashed var(--pryColor);
+  background-color: var(--lightColor);
+}
+.contact-us-text a{
+  background: var(--pryColor);
+}
+.contact-us-text a:nth-child(even){
+  background: var(--secColor);
+}
+/* team */
+.team-content .card-body{
+  background-color: var(--lightColor);
+}
+@media(max-width:466px){
+  .contact-us-text a:nth-child(odd){
+    margin-bottom: 1rem;
+  }
+}
+.bg-team-content-icon{
+  background-color: var(--pryColor2) !important;
+}
+.bg-team-content-icon a:hover .bg-team-content-icon i{
+  color: var(--lightColor) !important;
+}
+
+.team-content .card{
+  cursor: pointer;
+}
+/* footer */
+footer{
+  background-color: var(--secColor);
+}
+.footer-sign-up-btn{
+  background-color: var(--pryColor);
+}
+.footer-container input{
+  color: var(--lightColor) !important;
+}
+.footer-container input::placeholder{
+  color: var(--lightColor);
+}
+.footer-container .btn-link::before{
+  content: "> ";
+  color: var(--pryColor);
+}
+.footer-container .btn-link:hover{
+  color: var(--lightColor) !important;
+}
+.footer-container i{
+  color: var(--pryColor);
+}
