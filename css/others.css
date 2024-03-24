@@ -1,0 +1,4 @@
+.hero-link a:hover{
+  color: var(--hoverColor);
+}
+
