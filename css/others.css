@@ -2,3 +2,11 @@
   color: var(--hoverColor);
 }
 
+form .btn{
+  background-color: var(--pryColor);
+  color: var(--lightColor);
+}
+form .btn:hover, form .btn:focus{
+  background-color: var(--hoverColor) !important;
+  color: var(--lightColor) !important;
+}

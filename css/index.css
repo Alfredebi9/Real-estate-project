@@ -5,7 +5,7 @@
   font-family: "Open Sans", sans-serif;
 }
 :root{
-  --pryColor: #00B98E;
+  --pryColor: #008566;
   --pryColor2:#EFFDF5;
   --secColor: #0E2E50;
   --lightColor: #fff;
@@ -56,14 +56,13 @@ img{
 
 
 /*start heading */
-.navbar-brand > h2:hover{
+nav{
+  background: var(--pryColor2);
+}
+.navbar-brand > h3:hover{
   color: var(--hoverColor);
 }
-.logo-container{
-  border: 1px dashed var(--secColor);
-  width: 3.5rem;
-}
-.navbar-brand > h2{
+.navbar-brand > h3{
  color: var(--pryColor);
 }
 nav .btn, .abt-btn{
@@ -80,9 +79,10 @@ nav .btn, .abt-btn{
 }
 .dropdownclass:hover .dropdown-menu{
   display: block !important;
+  background-color: var(--pryColor2);
 }
 .dropdown-menu a:active, .dropdown-menu a.active{
-  background-color: var(--lightColor);
+  background-color: var(--pryColor2);
 }
 
 @media(max-width: 992px){
