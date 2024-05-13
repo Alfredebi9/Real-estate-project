@@ -32,7 +32,7 @@
     <!-- start of nav-bar --> 
     <nav class="navbar navbar-expand-lg py-1 p-0 sticky-top">
       <div class="container-fluid px-lg-5">
-        <a class="navbar-brand d-flex justify-content-center align-items-center" href="index.html">
+        <a class="navbar-brand d-flex justify-content-center align-items-center" href="/">
           <div>
             <img src="img/logo.png" style="height: 75px;" class="img-fluid" alt="Logo">
           </div>
@@ -44,25 +44,25 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
           <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html" aria-current="page">HOME</a>
+              <a class="nav-link active" href="/" aria-current="page">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT</a>
+              <a class="nav-link" href="/about">ABOUT</a>
             </li>
             <li class="nav-item dropdown dropdownclass">
               <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROPERTY</a>
               <div class="dropdown-menu" aria-labelledby="dropdownId">
-                <a class="dropdown-item" href="property/p-agent.html">PROPERTY AGENT</a>
-                <a class="dropdown-item" href="property/p-list.html">PROPERTY LIST</a>
+                <a class="dropdown-item" href="/property-agent">PROPERTY AGENT</a>
+                <a class="dropdown-item" href="/property-listing">PROPERTY LIST</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="testimonial.html">TESTIMONIAL</a>
+              <a class="nav-link" href="/testimonial">TESTIMONIAL</a>
             </li>
             <li class="nav-item me-2">
-              <a class="nav-link" href="contact-us.html">CONTACT US</a>
+              <a class="nav-link" href="/contact">CONTACT US</a>
             </li>
-            <a href="" class="btn text-light mt-lg-0 mt-2 btn-hover">Add Property</a>
+            <button onclick="logout()" class="btn text-light mt-lg-0 mt-2 btn-hover">Log out</button>
           </ul>
         </div>
       </div>
@@ -73,13 +73,14 @@
     <section class="container-xxl ps-lg-5 mb-5 overflow-hidden">
         <div class="row align-items-center g-4">
           <div class="col-md-6 hero-text ps-lg-3">
+            <p id="message-container"></p>
             <h1 class="notDarkText display-3 fw-bold mt-lg-0 mt-5">
               Find A <span class="green-text">Perfect  Home</span> To Live With Your Family
             </h1>
             <p>
               Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.
             </p>
-            <a href="" class="btn px-5 py-3 text-light btn-hover">Get Started</a>
+            <a href="/property-listing" class="btn px-5 py-3 text-light btn-hover">Get Started</a>
           </div>
           <div class="col-md-6">
             <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -417,14 +418,14 @@
 
         </div>
         <!--end items -->
-        <div class="text-center browse-more">
-          <a href="" class="btn p-5 py-3 text-light btn-hover">Browse More Property</a>
+        <div class="text-center browse-more mb-5">
+          <a href="/property-listing" class="btn p-5 py-3 text-light btn-hover">Browse More Property</a>
         </div>
       </div>
     </div>
     <!-- end of property-listing -->
     <!-- start contact-us -->
-    <div class="container contact-us py-5">
+    <!-- <div class="container contact-us py-5">
       <div class="card p-3">
         <div class="card-body p-4 rounded"> 
           <div class="row g-4 align-items-center">
@@ -444,10 +445,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- end contact-us -->
     <!-- start of property-agent -->
-    <div class="container mb-5">
+    <!-- <div class="container mb-5">
       <div class="notDarkText m-auto text-center w-lg-60 mb-5">
         <h1 class="fw-bold">Property Agents</h1>
         <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
@@ -513,7 +514,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- end of property-agent -->
     <footer class="container-xxl text-white-50 py-5">
       <div class="container py-4">
@@ -537,10 +538,10 @@
             <div class="footer-container">
               <h5 class="text-white mb-4">Quick Links</h5>
               <div>
-                <a class="btn btn-link text-white-50 p-0" href="">About Us</a>
+                <a class="btn btn-link text-white-50 p-0" href="/about">About Us</a>
               </div>
               <div>
-                <a class="btn btn-link text-white-50 p-0" href="">Contact Us</a>
+                <a class="btn btn-link text-white-50 p-0" href="/contact">Contact Us</a>
               </div>
               <div>
                 <a class="btn btn-link text-white-50 p-0" href="">Our Services</a>
@@ -601,5 +602,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 <!-- custom js -->
+<script src="js/client.js"></script>
 <script src="js/index.js"></script>
 </html>

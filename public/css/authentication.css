@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+:root{
+  --pryColor: #008566;
+  --pryColor2:#EFFDF5;
+  --secColor: #0E2E50;
+  --lightColor: #fff;
+  --hoverColor: #00cca7;
+}
+.container-fluid{
+  background: var(--pryColor);
+  min-height: 100vh;
+}
+
+.container{
+  background: var(--hoverColor);
+  /* width: 95vw; */
+}
+
+.pacifo-color{
+  color: var(--secColor);
+  font-family: "Pacifico", cursive; 
+}
+input:focus{
+  border-inline: none !important;
+}
+.btn{
+  background-color: var(--pryColor2);
+}
+.btn:hover, .btn:focus{
+  background-color: var(--pryColor2) !important;
+  border: none;
+}
